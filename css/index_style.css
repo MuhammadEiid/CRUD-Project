@@ -1,0 +1,36 @@
+
+/* tags 1 , class 10 , :  10 , id 100 */
+
+
+:root
+{
+    /* global scope */
+    --hamda : red;
+}
+
+.parent
+{
+    /* local scope */
+    --hamda : blue; 
+}
+
+.ahmed
+{
+    color : fuchsia;
+}
+
+h1
+{
+    color: var(--hamda) ;
+
+}
+
+.parent
+{
+    border : 5px solid var(--hamda);
+}
+
+p
+{
+    background-color: var(--hamda , gray);
+}

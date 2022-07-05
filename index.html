@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+
+    <div class="w-75 m-auto">
+        <h1 class="text-center text-info mt-5">Our Products</h1>
+
+        <div>
+            <label class="text-info fw-bold">Product Name</label>
+            <input id="pName" class="form-control mb-3">
+        </div>
+
+        <div>
+            <label class="text-info fw-bold">Product Price</label>
+            <input id="pPrice" class="form-control mb-3">
+        </div>
+
+        <div>
+            <label class="text-info fw-bold">Product Category</label>
+            <input id="pCat" class="form-control mb-3">
+        </div>
+
+        <div>
+            <label class="text-info fw-bold">Product Description</label>
+            <textarea id="pDesc" class="form-control mb-3"></textarea>
+        </div>
+
+        <div id="buttons-area">
+        <button onclick="addProduct()" class="btn btn-info text-white">Add Product</button>
+    </div>
+
+
+        <input id="searchForProduct" onkeyup="searchBar()" class="form-control my-5 w-50 mx-auto" placeholder="Search Product">
+
+
+        <table class="table">
+            <thead class="text-info">
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th class="text-warning">Update</th>
+                <th class="text-danger">Delete</th>
+
+            </thead>
+
+            <tbody id="tBody">
+
+
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
